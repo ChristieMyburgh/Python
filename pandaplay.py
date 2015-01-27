@@ -8,16 +8,27 @@ This is a temporary script file.
 import pandas
 import os
 
-files = []
-
 mypath = "C:\GitHub\Python"
+
+files = []
+dirs = []
 
 for (dirpath, dirnames, filenames) in os.walk(mypath):
     files.extend(filenames)
+    dirs.extend(dirnames)
+    break
 
+print(dirs)
+print(len(files))
+print(files)
 
 
 def func1(x):
+    """
+    Test function
+    :type x: int
+    :return:
+    """
     return x+1
 
 y = 1
