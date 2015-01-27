@@ -6,6 +6,15 @@ This is a temporary script file.
 """
 
 import pandas
+import os
+
+files = []
+
+mypath = "C:\GitHub\Python"
+
+for (dirpath, dirnames, filenames) in os.walk(mypath):
+    files.extend(filenames)
+
 
 
 def func1(x):
