@@ -23,6 +23,9 @@ print(len(files))
 print(files)
 
 
+def func2(x):
+    return x**2
+
 def func1(x):
     """
     Test function
